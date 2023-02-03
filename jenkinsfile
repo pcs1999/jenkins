@@ -1,4 +1,5 @@
 @Library('roboshop') _
+env.pcs = "super"
 test1.new1 ()
 
 pipeline {
