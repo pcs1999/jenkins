@@ -4,11 +4,15 @@ pipeline {
         stage('test1') {
          steps {
             script {
-                def chandra = "firstname"
+                env.chandra = "firstname"
                 def shekar = "lastname"
 
                 print chandra
                 print shekar 
+            }
+
+            script {
+                print chandra
             }
          }
         }
